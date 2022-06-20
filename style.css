@@ -1,0 +1,663 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body{
+font-family: sans-serif;
+color:  #353535;
+line-height: 27.2px;
+text-align: center;
+}
+
+
+
+
+/* MY CODE */
+.navbar{
+position: fixed;
+top: 0;
+left: 0;
+margin-top: 0;
+color: #fff;
+box-shadow: 0 0 7px 0 #ced3da;
+
+}
+
+.navbar-container{
+margin: auto;
+
+width: 100%;
+}
+
+
+
+/* SECTION */
+.header{
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+
+.header-container{
+padding: 1rem 1rem;
+display: block;
+align-content: center;
+align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-left{
+    margin-bottom: 70px;
+}
+
+.header-texts{
+margin-bottom: 1rem;
+}
+
+.header-texts h1 {
+font-size: 3rem;
+line-height: 3.2rem;
+margin-bottom: 1rem;
+}
+
+.header-texts p {
+padding: 0 20px 5px;
+}
+
+
+.create-btn{
+    margin-bottom: 1rem;
+}
+
+.create-button{
+background-color: #0c1825;
+color: #fff;
+padding: 1.2rem 2rem;
+border-radius: 10px;
+font-size: 1rem;
+font-weight: 700;
+cursor: pointer;
+border: none;
+}
+
+.apple-btn{
+    margin-bottom: 1rem;
+}
+
+.apple-button{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* color: #fff; */
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;  
+}
+.googleapp-btn{
+    margin-bottom: 1rem;
+}
+
+.ggapp-button{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* color: #fff; */
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem; 
+    cursor: pointer; 
+}
+
+.img-cruise{
+position: relative;
+width: auto;
+}
+
+.rect{
+position: relative;
+left: 22%;
+max-width: 275px;
+height: 572px;
+transform: translate(0 0);
+opacity: 1;
+}
+
+.beauty{
+position: absolute;
+left: 12%;
+max-width: 280px;
+height: 500px;
+top: 38px;
+object-fit: cover;
+border-radius: 16px;
+opacity: 1;
+} 
+
+.card1{
+width: 200px;
+position: absolute;
+top: 200px;
+opacity: 1;
+transform: translate(0 0);
+left: -2%;
+}
+
+
+.card2{
+width: 200px;
+position: absolute;
+top: 400px;
+opacity: 1;
+left: 48%;
+}
+
+@media only screen and (min-width: 768px) {
+.header-texts h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    }
+
+.header-texts{
+padding: 0 105px;
+}
+
+.remaining-btn{
+margin-top: 40px;
+display: flex;
+justify-content: center;
+}
+
+.apple-btn{
+   margin-right: 5px;
+}
+
+.googleapp-btn{
+    margin-left: 5px; 
+}
+
+
+}
+
+
+
+
+/* INVESTMENT SECURITY SECTION */
+.investment-security{
+padding-top: 90px;
+padding-bottom: 70px;
+}
+
+.investment-container{
+margin: auto;
+max-width: 337px;
+}
+
+.security-icon{
+max-width: 100px;  
+}
+
+.invest-h4 {
+font-size: 2rem;
+line-height: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.secu{
+margin-bottom: 2rem;
+}
+
+.invest-text{
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+.security-link{
+text-decoration: none;
+font-weight: 600;
+color: #0d60d8;
+}
+
+
+
+
+
+/* SAVING */
+
+.saving{
+padding:60px 18px 100px;
+}
+
+.saving-container{
+margin: auto;
+}
+
+.row{
+display: flex;
+}
+
+.saving-world{
+position: relative;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+}
+
+.saving-h3{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    }
+
+.saving-text{
+margin: 18px 0 53px;
+}
+
+.saving-btn{
+    margin-bottom: 4rem;
+}
+
+.saving-button{
+    background-color: #0c1825;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+/* WORLD SUBSECTION */
+
+.saving-world2{
+border-radius: 20px;
+background-color: #f9f9f9;
+padding: 30px;
+margin-bottom: 45px;
+}
+
+a{
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.world2-h5{
+color: #0c1825;
+font-size: 19px;
+margin-top: 25px;
+}
+
+.world2-text{
+color: #000;
+min-height: 80px;
+max-width:290px;
+margin: 18px 0 40px;
+
+}
+
+.sub-title{
+color:#353535;
+font-weight: 500;
+}
+
+svg{
+position: relative;
+top: 0;
+vertical-align: bottom;
+margin-right: 10px;
+}
+
+
+
+
+
+
+/* SECTION */
+.snd-investment{
+padding-bottom: 50px;
+
+}
+
+.snd-investment-container{
+margin: auto;
+box-sizing: border-box;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+/* 
+.phn-image{
+width: auto;
+position: relative;
+
+} */
+
+.phn{
+    width: 100%;
+}
+
+.snd-right-content{
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.tag{
+background-color: #f7f0ff;
+border-radius: 40px;
+/* margin-left: 25px;
+margin-right: 25px; */
+color: #7913e5;
+margin-bottom: 30px;
+font-weight: 700;
+}
+
+.snd-right-h2{
+font-size: 1.8rem;
+line-height: 2.5rem;
+}
+
+.tag2{
+margin: 25px 0;
+}
+
+.snd-link{
+    color: #7913e5;  
+}
+
+
+
+
+/* SECTION */
+.white-interact{
+color: #fff;
+}
+
+.WI-left{
+background-color: #0d60d8;
+box-sizing: border-box;
+}
+
+.mrblue-h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.wi-text{
+padding:0 20px 90px 20px;
+}
+
+.wi-link{
+color: #fff;
+font-weight: 600;
+}
+
+.WI-right{
+background-image: url(img/saver.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 400px;
+}
+
+
+
+
+
+/* ENDING  */
+.features{
+background-color: #f9f9f9;
+padding: 65px 16px;
+}
+
+.features-container{
+margin: auto;
+}
+
+/* .tech-images{
+
+} */
+
+.tech{
+    width: 100%;
+}
+
+.guardian{
+    width: 100%;
+}
+
+.tech-crunch{
+    width: 100%;
+}
+
+.mumu{
+padding: 20px 100px;
+}
+
+.features-vague-h4{
+font-size: 2rem;
+margin-bottom: 40px;
+}
+
+
+
+
+
+/* FUFU SEC  */
+footer{
+padding:80px 16px 50px;
+font-size: 12.82px;
+text-align: left;
+}
+
+.footer-container{
+margin: auto;
+max-width: 1165px;
+box-sizing: border-box;
+}
+
+.ft-row{
+display: flex;
+flex-wrap: wrap;
+margin-left: 0;
+margin-right: 0;
+}
+
+.piggyvest-logo-container{
+margin-bottom: 30px;
+}
+
+.product{
+order: 1;
+flex: 0 0 50%;
+margin-bottom: 30px;
+}
+
+.company{
+order: 2;
+flex: 0 0 50%;
+margin-bottom: 30px;
+}
+
+.legal{
+order: 3;
+flex: 0 0 50%;
+margin-bottom: 30px;
+}
+
+.connect{
+order: 4;
+margin-bottom: 30px;
+}
+
+.ft-ls{
+color: #0c1825;
+margin-bottom: 10px;
+font-weight: 750;
+}
+
+footer a{
+display: block;
+color: inherit;
+text-align: left;
+margin-bottom: 3px;
+font-weight: 500;
+}
+
+
+
+
+
+.sm{
+list-style: none;
+margin-bottom: 30px;
+}
+
+.fab{
+font-family:"Font Awesome 5 Brands";
+} 
+
+
+.fab::before{
+content: "/f082";
+}
+
+.ft-text-left{
+line-height: 21px;
+margin-bottom: 15px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.ft-text-left{
+line-height: 21px;
+margin-bottom: 15px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.ft-text-right{
+line-height: 21px;
+margin-bottom: 15px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.about{
+padding: 40px 0 30p;
+font-weight: 500;
+text-align: center;
+}
+
+.text-center{
+    margin-bottom: 30px; 
+}
+
+.center-last{
+color:#083e9e ;
+}
