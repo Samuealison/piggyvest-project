@@ -107,6 +107,7 @@ font-family: sans-serif;
 color:  #353535;
 line-height: 27.2px;
 text-align: center;
+overflow-x: hidden;
 }
 
 
@@ -133,21 +134,20 @@ width: 100%;
 
 /* SECTION */
 .header{
-    padding-top: 200px;
-    padding-bottom: 10px;
+    padding: 200px 26px 10px 26px;
 }
 
 .header-container{
-padding: 1rem 1rem;
+/* padding: 1rem 0; */
 display: block;
-align-content: center;
-align-items: center;
+
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .header-left{
@@ -159,13 +159,13 @@ margin-bottom: 1rem;
 }
 
 .header-texts h1 {
-font-size: 3rem;
-line-height: 3.2rem;
+font-size: 45px;
+line-height: 57px;
 margin-bottom: 1rem;
 }
 
 .header-texts p {
-padding: 0 20px 5px;
+padding: 0 16px 5px;
 }
 
 
@@ -216,24 +216,28 @@ position: relative;
 width: auto;
 }
 
+.beauty, .rect{
+width: 100%;
+max-width: 276px;
+}
+
 .rect{
 position: relative;
-left: 22%;
-max-width: 275px;
 height: 572px;
-transform: translate(0 0);
 opacity: 1;
+left: 5%;
 }
 
 .beauty{
 position: absolute;
-left: 12%;
-max-width: 280px;
 height: 500px;
 top: 38px;
 object-fit: cover;
 border-radius: 16px;
+/* transform: translate(0 0); */
 opacity: 1;
+left: -8%;
+
 } 
 
 .card1{
@@ -242,7 +246,8 @@ position: absolute;
 top: 200px;
 opacity: 1;
 transform: translate(0 0);
-left: -2%;
+left: -22%;
+/* width: 100%; */
 }
 
 
@@ -251,7 +256,8 @@ width: 200px;
 position: absolute;
 top: 400px;
 opacity: 1;
-left: 48%;
+right: 0%;
+/* width: 100%; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -279,6 +285,10 @@ justify-content: center;
     margin-left: 5px; 
 }
 
+.beauty, .rect{
+    width: 100%;
+    max-width: 362px;
+    }
 
 }
 
@@ -319,6 +329,15 @@ margin-bottom: 1rem;
 text-decoration: none;
 font-weight: 600;
 color: #0d60d8;
+}
+
+@media only screen and (min-width: 768px){
+    .investment-container{
+        margin: auto;
+        max-width: 740px;
+        }
+        
+
 }
 
 
@@ -368,6 +387,20 @@ margin: 18px 0 53px;
     font-size: 1rem;
     cursor: pointer;
     border: none;
+}
+
+@media only screen and (min-width: 768px){
+    .saving-world{
+        padding-left: 228px;
+        padding-right: 228px;
+    }
+
+    .one{
+        padding-right: 15px;
+    }
+
+    
+
 }
 
 /* WORLD SUBSECTION */
@@ -422,38 +455,33 @@ padding-bottom: 50px;
 }
 
 .snd-investment-container{
-margin: auto;
+/* margin: auto; */
 box-sizing: border-box;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 32px;
+padding-right: 32px;
 }
 
-/* 
+
 .phn-image{
 width: auto;
 position: relative;
 
-} */
+}
 
 .phn{
-    width: 100%;
+    max-width: 276px;;
 }
 
 .snd-right-content{
-margin-top: 30px;
-margin-bottom: 30px;
-margin-left: auto;
-margin-right: auto;
-
+margin: 30px 0px;
 }
 
-.tag{
+.tag1{
 background-color: #f7f0ff;
+padding: 5px 0;
 border-radius: 40px;
-/* margin-left: 25px;
-margin-right: 25px; */
+margin: 80px 60px 30px;
 color: #7913e5;
-margin-bottom: 30px;
 font-weight: 700;
 }
 
@@ -470,6 +498,23 @@ margin: 25px 0;
     color: #7913e5;  
 }
 
+@media only screen and (min-width: 768px){
+    .snd-right-content{
+       padding-left: 150px ;
+       padding-right: 150px ;
+        } 
+        
+        .tag1{
+            margin: 80px 100px 30px;
+            
+            }
+
+            .snd-right-h2{
+                font-size: 2.5rem;
+                line-height: 3.5rem;
+                }
+}
+
 
 
 
@@ -481,6 +526,7 @@ color: #fff;
 .WI-left{
 background-color: #0d60d8;
 box-sizing: border-box;
+padding-bottom: 70px;
 }
 
 .mrblue-h2{
@@ -491,12 +537,13 @@ box-sizing: border-box;
 }
 
 .wi-text{
-padding:0 20px 90px 20px;
+padding:0 20px 50px 20px;
 }
 
 .wi-link{
 color: #fff;
 font-weight: 600;
+padding-bottom: 20px;
 }
 
 .WI-right{
@@ -505,6 +552,12 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 height: 400px;
+}
+
+@media only screen and (min-width: 768px){
+    .wi-text{
+        padding:0 170px 50px ;
+        }  
 }
 
 
@@ -522,19 +575,20 @@ margin: auto;
 }
 
 /* .tech-images{
-
+max-width: 300px;
 } */
 
 .tech{
-    width: 100%;
+    max-width: 100px;
 }
 
 .guardian{
-    width: 100%;
+    width: 100px;
+    
 }
 
 .tech-crunch{
-    width: 100%;
+    max-width: 100px;
 }
 
 .mumu{
@@ -544,6 +598,19 @@ padding: 20px 100px;
 .features-vague-h4{
 font-size: 2rem;
 margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px){
+    .mumu{
+        padding: 26px 30px;
+        }
+        
+        .tech-images{
+         display: flex;
+         justify-content: center;
+         }
+
+
 }
 
 
@@ -660,4 +727,9 @@ text-align: center;
 
 .center-last{
 color:#083e9e ;
+}
+
+
+@media only screen and (min-width: 768px){
+    
 }
