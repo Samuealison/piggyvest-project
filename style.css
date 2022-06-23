@@ -143,7 +143,7 @@ display: block;
 
 }
 
-.row{
+.h-row{
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
@@ -292,7 +292,72 @@ justify-content: center;
 
 }
 
+@media only screen and (min-width: 1000px){
+ 
+    .header-left{
+        flex: 0 0 50%;
+}
 
+.beauty, .rect{
+    width: 100%;
+    max-width: 300px;
+    }
+
+    .cruise-right{
+        flex: 0 0 50%; 
+    }
+
+    .rect{
+        left: 12%;
+        }
+
+    .beauty{
+    left: 20%;
+    } 
+      
+    .card1{
+       left: 1%;
+        }
+
+        .header-texts{
+   text-align: start;
+   padding: 70px 0 0;
+}
+
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: start;
+} */
+
+.create-btn{
+ text-align: start;
+}
+
+    .remaining-btn{
+       
+        display: flex;
+        justify-content: flex-start;
+        }
+        
+        .header-container{
+            padding: 0 3rem;
+          }
+
+          .header-texts h1 {
+            font-size: 64px;
+            line-height: 70px;
+            margin-bottom: 1rem;
+            }
+
+            .header-texts p {
+                padding: 0 0 5px;
+                }
+                
+    
+      
+}
 
 
 /* INVESTMENT SECURITY SECTION */
@@ -336,8 +401,27 @@ color: #0d60d8;
         margin: auto;
         max-width: 740px;
         }
-        
+       
+}
 
+
+
+
+@media only screen and (min-width: 1000px){
+    .investment-container{
+        display: flex;
+        }
+
+        .secu{
+            margin-right: 40px;
+            }
+
+             
+        .security-content{
+            text-align: start;
+            }
+        
+            
 }
 
 
@@ -356,6 +440,11 @@ margin: auto;
 
 .row{
 display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+align-content: center;
+justify-items: center;
 }
 
 .saving-world{
@@ -395,13 +484,69 @@ margin: 18px 0 53px;
         padding-right: 228px;
     }
 
-    .one{
+    .no-one{
+        padding-right: 15px;
+    }
+    .no-three{
         padding-right: 15px;
     }
 
-    
+    .row{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+align-content: center;
+justify-items: center;
+}
 
 }
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+   .saving-world{
+    max-width: 280px;
+    padding-left: 0;
+    padding-right: 0px;
+    text-align: start;
+    /* margin: 0 auto; */
+    }
+
+  
+
+.no-one, .no-two, .no-three, .no-four{
+    padding: 0 5px 0px;
+      
+}
+
+.saving-world2{
+    max-width: 270px; 
+    /* margin-bottom: 0;  */
+    margin: 0 auto;
+}
+
+.saving{
+    padding:60px 0 100px;
+    margin: 0 auto;
+    }
+
+    .saving-h3{
+        font-size: 2rem;
+       margin-right: 40px;
+        }
+
+        .no-three{
+            margin-left: 280px;
+        }
+        
+}
+
+
+
+
 
 /* WORLD SUBSECTION */
 
@@ -456,17 +601,17 @@ padding-bottom: 50px;
 
 .snd-investment-container{
 /* margin: auto; */
-box-sizing: border-box;
+/* box-sizing: border-box; */
 padding-left: 32px;
 padding-right: 32px;
 }
 
 
-.phn-image{
+/* .phn-image{
 width: auto;
 position: relative;
 
-}
+} */
 
 .phn{
     max-width: 276px;;
@@ -476,11 +621,15 @@ position: relative;
 margin: 30px 0px;
 }
 
+.up-tag{
+    padding: 30px 60px;
+}
+
 .tag1{
 background-color: #f7f0ff;
 padding: 5px 0;
 border-radius: 40px;
-margin: 80px 60px 30px;
+/* margin: 80px 0 30px; */
 color: #7913e5;
 font-weight: 700;
 }
@@ -500,9 +649,14 @@ margin: 25px 0;
 
 @media only screen and (min-width: 768px){
     .snd-right-content{
-       padding-left: 150px ;
-       padding-right: 150px ;
+       padding-left: 146px ;
+       padding-right: 146px ;
         } 
+
+        .up-tag{
+            padding: 0px 146px;
+        }
+        
         
         .tag1{
             margin: 80px 100px 30px;
@@ -513,6 +667,44 @@ margin: 25px 0;
                 font-size: 2.5rem;
                 line-height: 3.5rem;
                 }
+}
+
+@media only screen and (min-width: 1000px){
+    .investor-flex{
+       display: flex;
+       }
+       
+       /* .snd-right{
+        text-align: start;
+       } */
+
+       .snd-right-content{
+        padding-left: 70px ;
+        padding-right: 300px ;
+        text-align: start;
+         }
+         
+         .phn-image{
+         margin-left: 140px;   
+         }
+
+         .up-tag{
+            padding: 0px 58px 0 144px;
+            margin-right:320px ;
+        }
+        
+
+         .tag1{
+            margin: 80px 0px 30px;
+         }
+
+         .tag2{
+             font-size: 14px;
+            }
+
+                 
+
+        
 }
 
 
@@ -556,9 +748,60 @@ height: 400px;
 
 @media only screen and (min-width: 768px){
     .wi-text{
-        padding:0 170px 50px ;
+        padding:0 170px 60px ;
         }  
 }
+
+
+@media only screen and (min-width: 1000px){
+    .mr-flex{
+        display: flex;
+    } 
+    
+    .WI-left{
+        flex: 0 0 58%;
+    }
+
+
+    .WI-right{
+        flex: 0 0 42%;
+    }
+
+    .WI-right{
+        height: 415px;
+        }
+
+        .WI-left-content{
+            text-align: start;
+        }
+        .mrblue-h2{
+            padding: 20px 160px 20px 140px ;
+            font-size: 2.8rem;
+            line-height: 3.5rem;
+            
+        }
+
+        .wi-text{
+            padding:0 150px 40px 140px ;
+            }
+            
+            .wi-link{
+                padding:40px 150px 0 140px ;
+                padding-bottom: 0;
+                }
+
+                .WI-left{
+                    padding-bottom:0;
+                    }
+                
+
+        
+
+
+}
+
+
+
 
 
 
@@ -609,8 +852,19 @@ margin-bottom: 40px;
          display: flex;
          justify-content: center;
          }
+}
 
 
+@media only screen and (min-width: 1000px){
+ .features-row{
+    display: flex;
+    justify-content: center;
+ } 
+ 
+ .features-vague-h4{
+    margin-bottom: 0;
+    padding: 20px 80px;
+    }
 }
 
 
@@ -619,7 +873,7 @@ margin-bottom: 40px;
 
 /* FUFU SEC  */
 footer{
-padding:80px 16px 50px;
+padding:80px 16px 0px;
 font-size: 12.82px;
 text-align: left;
 }
@@ -638,13 +892,16 @@ margin-right: 0;
 }
 
 .piggyvest-logo-container{
-margin-bottom: 30px;
+max-height: 20px;
+position: relative;
+bottom: 40px;
 }
 
 .product{
 order: 1;
 flex: 0 0 50%;
 margin-bottom: 30px;
+
 }
 
 .company{
@@ -655,12 +912,12 @@ margin-bottom: 30px;
 
 .legal{
 order: 3;
-flex: 0 0 50%;
+
 margin-bottom: 30px;
 }
 
 .connect{
-order: 4;
+order: 3;
 margin-bottom: 30px;
 }
 
@@ -731,5 +988,74 @@ color:#083e9e ;
 
 
 @media only screen and (min-width: 768px){
+    footer{
+        padding:140px 16px 0px;
+      }
+
+      .piggyvest-logo-container{
+        max-height: 20px;
+        position: relative;
+        bottom: 80px;
+        }
+    
+    
+    .product{
+        order: 1;
+        flex: 0 0 50%;
+        margin-bottom: 30px;
+        margin-left: -190px;
+         }  
+         
+         .company{
+            order: 2;
+            flex: 0 0 50%;
+            margin-bottom: 30px;
+            margin-left: -30px;
+            }
+
+            .legal{
+                order: 3;
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+                }
+}
+
+@media only screen and (min-width: 1000px){
+ .ft-row{
+    display: flex;
+
+ } 
+
+ .piggyvest-logo-container{
+    max-height: 100%;
+    position: relative;
+    bottom: 40;
+    }
+ 
+ .product{
+    order: 1;
+    flex: 0 0 22.5%;
+
+    }
+    
+    .company{
+    order: 2;
+    flex: 0 0 22.5%;
+    
+    }
+    
+    .legal{
+    order: 3;
+    flex: 0 0 22.5%;
+  
+    }
+    
+    .connect{
+    order: 4;
+    flex: 0 0 22.5%;
+    
+    }
+
+  
     
 }
